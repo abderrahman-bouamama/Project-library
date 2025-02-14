@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>library-application</title>
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="nav-bar">
+            <div class="nav-img">
+                <img src="assets/logo.jpg" alt="logo" id="logo-img">
+            </div>
+            <div class="nav-links">
+                <nav class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Support</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="welcome-content">
+            <h2>Welcome to this open library</h2>
+            <button id="btn-add-book">Add book</button>
+        </div>
+        <div class="form-book">
+            <form id="book-form" type=hidden>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" required>
+
+                <label for="read">Read:</label>
+                <input type="checkbox" id="read" name="read">
+
+                <button type="submit">Add book</button>
+            </form>
+
+        </div>
+        <div id="library"></div>
+
+
+    </section>
+    <section class="footer">
+        <a href="#"><i class="fa-solid fa-history"></i> History</a>
+        <p>@abderrahman-bouamama on github</p>
+    </section>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
